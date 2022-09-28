@@ -1,0 +1,214 @@
+@import "../../styles/break-points.scss";
+
+.homeContainer{
+    background-image: url("../../assets/BackgroundHome.png");
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+    .wrap{
+        z-index: -1;
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .searchWrap{
+        display: flex;
+        flex-direction: row;
+        margin-top: 20px;
+        .addBtn{
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 15px;
+            margin-left: 10px;
+            border: 2px solid var(--primaryColor);
+            color: var(--white);
+            padding: 7.5px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            &.addBtn:hover {
+              background-color: var(--primaryColor);
+            }
+        }
+        }
+
+        .filterCards{
+
+        }
+        
+        .wrapCards{
+            height: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .content{
+                height: 90%;
+                display: grid;
+                grid-template-columns: repeat(3, 300px);
+                grid-template-rows: 295px;
+                gap: 5px;
+                .titleNewCar{
+                    margin-top: 150px;
+                    text-align: center;
+                    opacity: .3;
+                }
+                p {
+                    margin: 7px 0;
+                    font-size: .7rem;
+                    line-height: 1.5;
+                    text-align: justify;
+                  }
+                  .nameField{
+                    font-weight: bolder;
+                    font-size: .8rem;
+                }
+            }
+        }
+ 
+    }
+}
+
+
+@include desktop{
+
+
+}
+@include notebook{
+
+}
+@include tabletlandscape{
+    .homeContainer{
+
+        .wrap{
+
+            .searchWrap{
+
+            .addBtn{
+                font-size: 15px;
+                padding: 7.5px 10px;
+            }
+            }
+    
+            .filterCards{
+    
+            }
+            
+            .wrapCards{
+    
+                .content{
+                    height: 90%;
+                    display: grid;
+                    grid-template-columns: repeat(3, 250px);
+                    grid-template-rows: 305px;
+                    gap: 5px;
+                }
+            }
+     
+        }
+    }
+    
+}
+@include tablet {
+    .homeContainer{
+        .wrap{
+
+            .searchWrap{
+                position: relative;
+                top: 10px;
+                .addandSelect{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    align-content: center;
+                }
+            .addBtn{
+                font-size: 15px;
+                margin-left: 15px;
+                padding: 7.5px 20px;
+                margin-bottom: 10px;
+            }
+            }
+    
+            .filterCards{
+    
+            }
+            
+            .wrapCards{
+    
+                .content{
+                    height: 90%;
+                    display: grid;
+                    grid-template-columns: repeat(2, 250px);
+                    grid-template-rows: 365px;
+                    gap: 5px;
+                    .titleNewCar{
+                        margin-top: 150px;
+                        text-align: center;
+                        opacity: .3;
+                    }
+                    p {
+                        margin: 8px 0;
+                        font-size: .8rem;
+                        line-height: 1.5;
+                        text-align: justify;
+                      }
+                      .nameField{
+                        font-weight: bolder;
+                        font-size: 1rem;
+                    }
+                }
+            }
+     
+        }
+    }
+
+}
+@include mobile {
+    .homeContainer{
+
+        .wrap{
+
+            .searchWrap{
+
+            .addBtn{
+ 
+            }
+            }
+    
+            .filterCards{
+    
+            }
+            
+            .wrapCards{
+    
+                .content{
+                    height: 90%;
+                    display: grid;
+                    grid-template-columns: repeat(1, 280px);
+                    grid-template-rows: 365px;
+                    gap: 5px;
+                    .titleNewCar{
+                        margin-top: 150px;
+                        text-align: center;
+                        opacity: .3;
+                    }
+                    p {
+                        margin: 8px 0;
+                        font-size: .8rem;
+                        line-height: 1.5;
+                        text-align: justify;
+                      }
+                      .nameField{
+                        font-weight: bolder;
+                        font-size: 1rem;
+                    }
+                }
+            }
+     
+        }
+    }
+
+}

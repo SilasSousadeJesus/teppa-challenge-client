@@ -1,0 +1,15 @@
+.AppForm {
+    background-color: #2D2E2E;
+    width: 400px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px ;
+  .Title {
+    margin-top: 20px;
+    text-align: center;
+    color: var(--primaryColor);
+    text-transform: uppercase;
+  }
+}

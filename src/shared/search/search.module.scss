@@ -1,0 +1,140 @@
+@import "../../styles/break-points.scss";
+
+
+.seachContainer {
+  display: flex;
+  flex-direction: row;
+  .AppInput {
+    min-width: 350px;
+    .inputSearch {
+      width: 100%;
+      padding: 7.5px 20px;
+      font-size: 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: var(--white);
+      &:focus {
+        outline: none;
+        border-color: none;
+        box-shadow: 0 0 0 0;
+      }
+      &::placeholder {
+        font-size: 15px;
+        opacity: .8;
+      }
+    }
+  }
+  .clearBtn {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    margin-left: 10px;
+    border: 2px solid var(--primaryColor);
+    color: var(--white);
+    padding: 7.5px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    &.clearBtn:hover {
+      background-color: var(--primaryColor);
+    }
+  }
+}
+
+
+@include desktop{
+
+}
+@include notebook{
+
+}
+@include tabletlandscape{
+.seachContainer {
+  display: flex;
+  flex-direction: row;
+  .AppInput {
+    min-width: 260px;
+    .inputSearch {
+      width: 100%;
+      padding: 7.5px 20px;
+      font-size: 20px;
+      border-radius: 10px;
+      border: none;
+      background-color: var(--white);
+      &:focus {
+        outline: none;
+        border-color: none;
+        box-shadow: 0 0 0 0;
+      }
+      &::placeholder {
+        font-size: 15px;
+        opacity: .8;
+      }
+    }
+  }
+  .clearBtn {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    margin-left: 10px;
+    border: 2px solid var(--primaryColor);
+    color: var(--white);
+    padding: 7.5px 9px;
+    border-radius: 10px;
+    cursor: pointer;
+    &.clearBtn:hover {
+      background-color: var(--primaryColor);
+    }
+  }
+}
+}
+@include tablet {
+  .seachContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    width: 170px;
+    height: 100%;
+    .AppInput {
+      min-width: 150px;
+      .inputSearch {
+        width: 100%;
+        padding: 10px 20px;
+        font-size: 15px;
+        border-radius: 10px;
+        border: none;
+        background-color: var(--white);
+        &:focus {
+          outline: none;
+          border-color: none;
+          box-shadow: 0 0 0 0;
+        }
+        &::placeholder {
+          font-size: 15px;
+          opacity: .8;
+        }
+      }
+    }
+    .clearBtn {
+      border: none;
+      outline: none;
+      background: none;
+      font-size: 15px;
+      border: 2px solid var(--primaryColor);
+      color: var(--white);
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      &.clearBtn:hover {
+        background-color: var(--primaryColor);
+      }
+    }
+  }
+}
+@include mobile {
+
+
+}

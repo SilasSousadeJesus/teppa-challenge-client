@@ -1,0 +1,28 @@
+.AppInput {
+  margin-top: 10px;
+  width: 80%;
+  .inputLabel{
+    display: flex;
+    margin-left: 10px;
+    color: var(--primaryColor);
+  }
+  input {
+   width: 100%;
+   padding: 7.5px 25px;
+   font-size: 20px;
+   border-radius: 10px;
+   border: none;
+   background-color:var(--white) ;
+   &:focus{
+    outline: none;
+    border-color: none;
+    box-shadow: 0 0 0 0;
+   }
+   &::placeholder{
+    font-size: 15px;
+    opacity: .6;
+   }
+  }
+}
+
+

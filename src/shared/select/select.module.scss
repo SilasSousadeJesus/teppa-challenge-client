@@ -1,0 +1,65 @@
+@import "../../styles/break-points.scss";
+
+
+.select {
+border: none;
+outline: none;
+background: none;
+font-size: 15px;
+margin-left: 10px;
+border: 2px solid var(--primaryColor);
+padding: 7.5px 20px;
+border-radius: 10px;
+color: var(--primaryColor);
+background-color: var(--headingColor);
+cursor: pointer;
+
+}
+
+
+@include desktop{
+
+
+}
+@include notebook{
+
+}
+@include tabletlandscape{
+    
+.select {
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 15px;
+    margin-left: 10px;
+    border: 2px solid var(--primaryColor);
+    padding: 7.5px 20px;
+    border-radius: 10px;
+    color: var(--primaryColor);
+    background-color: var(--headingColor);
+    cursor: pointer;
+    
+    }
+    
+}
+@include tablet {
+    .select {
+        border: none;
+        outline: none;
+        background: none;
+        font-size: 15px;
+        margin-left: 10px;
+        border: 2px solid var(--primaryColor);
+        padding: 7.5px 1px;
+        border-radius: 10px;
+        color: var(--primaryColor);
+        background-color: var(--headingColor);
+        cursor: pointer;
+        
+        }
+
+}
+@include mobile {
+
+
+}

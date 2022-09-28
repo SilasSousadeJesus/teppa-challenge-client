@@ -1,0 +1,458 @@
+@import "../../styles/break-points.scss";
+
+.Container{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100%;
+    background-color: #2D2E2E;
+    .wrapPicture{
+      height: 100%;
+       width:50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      .picture{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .wrapContent{
+        width:50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #2D2E2E;
+        .heroContent {
+          max-width: 55%;
+          text-align: center;
+          .contacts{
+            color: var(--primaryColor);
+          }
+          h1 {
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--primaryColor);
+          }
+          h2 {
+            font-size: 18px;
+          }
+          h3 {
+            font-size: 18px;
+          }
+          h4 {
+            font-size: 13px;
+          }
+          .hello{
+            text-align: justify;
+            margin-top: 20px;
+          }
+          .name{
+            text-align: justify;
+          }
+          .office{
+            text-align: start;
+            color: var(--white);
+          }
+          .desc{
+            margin-top: 10px;
+            text-align: justify;
+          }
+          .btn {
+            border: none;
+            outline: none;
+            background: none;
+            font-size: 17px;
+            background-color: var(--primaryColor);
+            color: var(--white);
+            padding: 15px 50px;
+            border-radius: 50px;
+            margin-top: 5px;
+            cursor: pointer;
+          }
+          .primaryBtn {
+            @extend .btn;
+            background: none;
+            border: 2px solid var(--primaryColor);
+    
+            &.primaryBtn:hover {
+              background-color: var(--primaryColor);
+            }
+          }
+          .wrapIcons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top:10px;
+            a{
+              text-decoration: none;
+              color: white;
+            }
+          }
+          .icon{
+            width: 30px;
+            height: 30px;
+            margin-left: 8px;
+            cursor: pointer;
+            &:hover{
+              color: var(--primaryColor);
+            }
+          }
+        }
+ 
+    }
+}
+
+@include desktop{
+}
+@include notebook{
+  .Container{
+
+    .wrapContent{
+        width:50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-content: center;
+        background-color: #2D2E2E;
+        .heroContent {
+          max-width: 55%;
+          text-align: center;
+          margin-bottom: 100px;
+          margin-top: 50px;
+          h1 {
+            font-size: 30px;
+            font-weight: 600;
+            color: var(--primaryColor);
+          }
+          h2 {
+            font-size: 16px;
+          }
+          h3 {
+            font-size: 16px;
+          }
+          h4 {
+            font-size: 12px;
+          }
+          .hello{
+            text-align: justify;
+            margin-top: 20px;
+          }
+          .name{
+            text-align: justify;
+          }
+          .office{
+            text-align: start;
+            color: var(--white);
+          }
+          .desc{
+            margin-top: 10px;
+            text-align: justify;
+          }
+
+          .btn {
+            font-size: 17px;
+            padding: 12px 40px;
+          }
+
+          .wrapIcons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top:10px;
+            a{
+              text-decoration: none;
+              color: white;
+            }
+          }
+          .icon{
+            width: 30px;
+            height: 30px;
+            margin-left: 8px;
+            cursor: pointer;
+            &:hover{
+              color: var(--primaryColor);
+            }
+          }
+        }
+ 
+    }
+}
+}
+@include tabletlandscape{
+
+  .Container{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100%;
+    background-color: #2D2E2E;
+    .wrapPicture{
+      height: 100%;
+       width:50%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      .picture{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .wrapContent{
+        width:50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #2D2E2E;
+        .heroContent {
+          max-width: 55%;
+          text-align: center;
+          margin-bottom: 100px;
+          h1 {
+            font-size: 30px;
+            font-weight: 600;
+            color: var(--primaryColor);
+          }
+          h2 {
+            font-size: 16px;
+          }
+          h3 {
+            font-size: 16px;
+          }
+          h4 {
+            font-size: 12px;
+          }
+          .hello{
+            text-align: justify;
+            margin-top: 20px;
+          }
+          .name{
+            text-align: justify;
+          }
+          .office{
+            text-align: start;
+            color: var(--white);
+          }
+          .desc{
+            margin-top: 10px;
+            text-align: justify;
+          }
+
+          .btn {
+            font-size: 17px;
+            padding: 12px 40px;
+          }
+
+          .wrapIcons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top:10px;
+            a{
+              text-decoration: none;
+              color: white;
+            }
+          }
+          .icon{
+            width: 30px;
+            height: 30px;
+            margin-left: 8px;
+            cursor: pointer;
+            &:hover{
+              color: var(--primaryColor);
+            }
+          }
+        }
+ 
+    }
+}
+
+}
+@include tablet {
+
+  .Container{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100%;
+    background-color: #2D2E2E;
+    .wrapPicture{
+        display: none;
+      .picture{
+        display: none;
+      }
+    }
+    .wrapContent{
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #2D2E2E;
+        .heroContent {
+          max-width: 50%;
+          text-align: center;
+          margin-bottom: 100px;
+          .btn {
+            font-size: 17px;
+            padding: 15px 50px;
+            border-radius: 50px;
+            margin-top: 20px;
+            cursor: pointer;
+          }
+          h1 {
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--primaryColor);
+          }
+          h2 {
+            font-size: 18px;
+          }
+          h3 {
+            font-size: 18px;
+          }
+          h4 {
+            font-size: 13px;
+          }
+          .hello{
+            text-align: justify;
+            margin-top: 20px;
+          }
+          .name{
+            text-align: justify;
+          }
+          .office{
+            text-align: start;
+            color: var(--white);
+          }
+          .desc{
+            margin-top: 10px;
+            text-align: justify;
+          }
+          .wrapIcons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top:20px;
+            a{
+              text-decoration: none;
+              color: white;
+            }
+          }
+          .icon{
+            width: 30px;
+            height: 30px;
+            margin-left: 8px;
+            cursor: pointer;
+            &:hover{
+              color: var(--primaryColor);
+            }
+          }
+        }
+ 
+    }
+}
+
+
+}
+@include mobile {
+
+  .Container{
+    display: flex;
+    flex-direction: row;
+    height: 90vh;
+    width: 100%;
+    background-color: #2D2E2E;
+    .wrapPicture{
+        display: none;
+      .picture{
+        display: none;
+      }
+    }
+    .wrapContent{
+        width:100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        background-color: #2D2E2E;
+        .heroContent {
+          max-width: 50%;
+          text-align: center;
+          margin-bottom: 180px;
+          .btn {
+            font-size: 17px;
+            padding: 15px 50px;
+            border-radius: 50px;
+            margin-top: 20px;
+            cursor: pointer;
+          }
+          h1 {
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--primaryColor);
+          }
+          h2 {
+            font-size: 18px;
+          }
+          h3 {
+            font-size: 18px;
+          }
+          h4 {
+            font-size: 13px;
+          }
+          .hello{
+            text-align: justify;
+            margin-top: 20px;
+          }
+          .name{
+            text-align: justify;
+          }
+          .office{
+            text-align: start;
+            color: var(--white);
+          }
+          .desc{
+            margin-top: 10px;
+            text-align: justify;
+          }
+          .wrapIcons{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            margin-top:20px;
+            a{
+              text-decoration: none;
+              color: white;
+            }
+          }
+          .icon{
+            width: 30px;
+            height: 30px;
+            margin-left: 8px;
+            cursor: pointer;
+            &:hover{
+              color: var(--primaryColor);
+            }
+          }
+        }
+ 
+    }
+}
+
+
+}
