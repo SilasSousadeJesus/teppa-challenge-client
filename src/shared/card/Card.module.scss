@@ -4,7 +4,7 @@
 .Card {
   margin: 0 auto 0 auto;
   width: 300px;
-  height: 295px;
+  height: 320px;
   padding: 1.5rem;
   text-align: left;
   color: inherit;
@@ -73,7 +73,7 @@
 @include tabletlandscape{
   .Card{
     width: 250px;
-    height: 305px;
+    height: 380px;
     h2 {
       font-size: 1rem;
     }
@@ -82,7 +82,7 @@
 @include tablet {
   .Card{
     width: 250px;
-    height: 365px;
+    height: 450px;
     h2 {
       margin: 0 0 1rem 0;
       font-size: 1rem;
@@ -93,7 +93,7 @@
 @include mobile {
   .Card{
     width: 280px;
-    height: 365px;
+    height: 430px;
     h2 {
       margin: 0 0 1rem 0;
       font-size: 1rem;

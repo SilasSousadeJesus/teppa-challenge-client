@@ -51,7 +51,7 @@ const EditVehicle = () => {
       .required("Nome é Obrigatorio"),
     description: Yup.string()
       .min(2, "Descrição muito curta!")
-      .max(260, "Descrição muito curta!")
+      .max(260, "Descrição muito longa!")
       .required("A descrião é Obrigatorio"),
     plate: Yup.string()
       .min(8, "A placa precisa ter 8 caracteres!")
@@ -125,7 +125,7 @@ const EditVehicle = () => {
     <div className={styles.createContainer}>
     <div className={styles.wrap}>
       <div className={styles.content} data-aos="fade-right" >
-        <Form title="Cadastro de Veículo"  onSubmit={handleSubmit(onSubmit)}>
+        <Form title="Edição de Veículo"  onSubmit={handleSubmit(onSubmit)}>
               {step === 0 && (
                 <>
                 <div className={styles.stepsStyles}>Etapa 1/3</div>

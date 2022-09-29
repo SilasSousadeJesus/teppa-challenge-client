@@ -29,7 +29,7 @@ const CreateVehicle = () => {
       ,
     description: Yup.string()
       .min(2, "Descrição muito curta!")
-      .max(260, "Descrição muito curta!")
+      .max(260, "Descrição muito longa!")
       .required("A descrição é obrigatorio")
       ,
     plate: Yup.string()
