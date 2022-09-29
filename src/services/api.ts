@@ -3,7 +3,7 @@ import { isFavoriteaVehicle, ILogin, IRegistration, IUpdateUser, IUpdateVehicle,
 import { store } from "../redux/store";
 
 export const api = axios.create({
-  baseURL:"http://localhost:5000/"
+  baseURL:"https://teppa-challenge-api.herokuapp.com/"
 });
 
 api.interceptors.request.use((config)=> {

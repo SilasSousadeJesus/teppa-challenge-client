@@ -4,7 +4,7 @@
 <br>
 <div>
   <h2 align="center"> Clique no link para acessar a aplicação:  </h2>
-  <h3 align="center" >  https://frontyourtaskproject.herokuapp.com/  </h3>
+  <h3 align="center" >  https://teppa-challenge-client.web.app/login  </h3>
 </div>
 <br>
 
@@ -30,6 +30,7 @@
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" >
     <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" >
     <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" >
+    <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=for-the-badge&logo=firebase" >
   </div>
 
 </div>
@@ -38,7 +39,7 @@
   <h3>Para usar este projeto siga os seguintes passos: </h3>
   <ul >
     <li>Faça um git clone ou baixe manualmente o projeto.</li>
-    <p>copie e colo no seu terminal: git clone https://github.com/SilasSousadeJesus/yourTaskProject.git</p>
+    <p>copie e colo no seu terminal: git clone https://github.com/SilasSousadeJesus/teppa-challenge-client.git</p>
     <li>No seu VSCODE abra um terminal para pasta back-end e instala os modulos com o comando npm install</li>
     <li>No seu VSCODE abra um terminal para pasta front-end e instala os modulos com o comando npm install</li>
     <li>Dentro da pasta BackEnd renomeio o arquivo .env_exemplo para .env</li>
@@ -46,7 +47,7 @@
      <p>MONGODB_URI=mongodb+srv://user:senha@cluster0.fp3bn.mongodb.net/mydatabase</p>
      <li>Dentro do arquivo .env coloque uma sequencia de letras que seram sua secret, exemplo abaixo:</li>
      <p>SECRET=SHVCKASFASFASFASASFAAAFSMUENFELNEAUQFVFVN</p>
-     <li>No seu VSCODE abra a pasta back-end no terminal e digite o comando: "npm start".
+     <li>No seu VSCODE abra a pasta back-end no terminal e digite o comando: "npm run dev".
       e deixe o servidor rodando</li>
      <li>No seu VSCODE abra a pasta front-end em outro terminal e digite o comando: "npm start".. e deixe rodando</li>
      <li>Tudo pronto!!</li>
